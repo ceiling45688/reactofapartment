@@ -1,0 +1,87 @@
+/* Home.css */
+.home {
+    width: 100vw; /* Fill the entire viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+/*picture部分*/
+
+.home_picture {
+    position: relative; /* Set to relative so we can absolutely position the WhatDoYouNeed component */
+    width: 100%;
+    height: 50vh; /* biewport height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home_picture .texts {
+    position: absolute; /* 绝对定位以便调整位置 */
+    top: 45%; /* 上边缘垂直居中 */
+    right: 10%; /* 左边距离调整 */
+    transform: translateY(-50%); /* 垂直居中 */
+    text-align: right;
+
+}
+
+.home_picture .text-line1,
+.home_picture .text-line2,
+.home_picture .text-line3 {
+    margin: 10px 0; /* Add some vertical spacing between lines */
+    color: #FF5722;
+
+}
+.home_picture .text-line1{
+    font-size: 60px;
+}
+.home_picture .text-line2{
+    font-size: 26px;
+    font-style: italic;
+}
+.home_picture .text-line3{
+    font-size: 26px;
+}
+
+
+.home_picture .text-line3 {
+    cursor: pointer; /* Make it look clickable */
+}
+
+.WhatDoYouNeed {
+    position: absolute; /* Absolutely position this component */
+    bottom: -10%; /* Position it slightly below the bottom of home_picture */
+
+}
+
+/* howitworks部分*/
+.HowItWorks_box{
+    position: relative;
+    align-items: stretch;
+}
+
+.room-tour {
+    width: 100%;
+    /* Add other styles as needed */
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle_text {
+    /* Add styles for the subtitle text */
+}
+
+.subtitle_bar {
+    flex-grow: 1; /* Make the bar take up the remaining space */
+    height: 2px;
+    background-color: #ccc; /* Example color */
+    margin-left: 10px; /* Add some spacing between the text and the bar */
+}

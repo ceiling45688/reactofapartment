@@ -1,0 +1,83 @@
+/* Footer.css */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%; /* 10% padding on left and right for alignment with the booking page's hero section */
+    background: #341D52;
+    margin-top: 20px;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.logotype {
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+}
+
+.social-links {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.cabbageApart {
+    font-weight: 700;
+    font-size: 31px;
+    color: #FFFFFF;
+}
+
+.description, .copyrights, .rights-reserved {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.links {
+    display: flex;
+    grid-gap: 50px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+.header {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+}
+
+.list-items a {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    color: #D9DBE1;
+    text-decoration: none;
+}
+
+.list-items a:hover {
+    text-decoration: underline;
+}

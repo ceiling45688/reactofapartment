@@ -1,0 +1,28 @@
+.contact {
+    height: 200px;
+    width: auto;
+}
+.contact-content{
+    background-color: rgba(255, 87, 34, 0.11);
+    width: auto;
+    height: 53vh;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding-bottom: 6px;
+    justify-content: center;
+}
+.contact-content h1 {
+    color: #FF5722;
+    font-size: 80px;
+    margin-bottom: 30px;
+    margin-top: -10%;
+    margin-right: 60%;
+}
+
+.contact-content p {
+    color: #FF5722;
+    font-style: italic;
+    margin-right: 60%;
+    font-size: 24px;
+}

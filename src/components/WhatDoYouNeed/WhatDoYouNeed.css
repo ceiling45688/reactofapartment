@@ -1,0 +1,46 @@
+.WDYN-box {
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #341D52;
+}
+
+h2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index:1; /*确保文字在其他元素之上 */
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 40px;  /* 增加上边距以确保选项框不被标题遮挡 */
+}
+
+.room-type, .start-date, .end-date {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins-Bold", Helvetica,sans-serif;
+
+}
+
+.search-btn {
+    padding: 5px 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins-Bold", Helvetica,sans-serif;
+}

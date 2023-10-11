@@ -1,0 +1,55 @@
+.how-it-works-container {
+    background-color: #ff57211c;
+    height: 200px;
+    left: 0;
+    position: relative;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works-container h2 {
+    color: #282c34;
+    font-size: 24px;
+    left: 50%;
+    margin-top: 60px;
+}
+
+.process {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: -5%;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.step {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.step-title {
+    color: #282c34;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.step-title h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.step p {
+    font-size: 14px;
+    color: gray;
+}

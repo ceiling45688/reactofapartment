@@ -1,0 +1,62 @@
+.room-card {
+    height: 413px;
+    width: 252px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    position: relative;
+    text-align: left;
+}
+
+.room-image {
+    height: 206px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.image-overlay {
+    background-color: #3333337d;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.room-details {
+    padding: 16px;
+}
+
+
+.room-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 1.6; /* 行间距 */
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.room-number {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.select-room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    background-color: #341c51;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.select-room-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
