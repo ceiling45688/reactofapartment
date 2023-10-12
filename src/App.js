@@ -5,6 +5,7 @@ import Booking from './pages/Booking'
 import {Contact} from "./pages/Contact";
 import {Home} from "./pages/Home";
 import {Customer} from "./pages/Customer";
+import {Staff} from "./pages/Staff"
 
 function App() {
     return (
@@ -24,7 +25,8 @@ function App() {
                 {/*</a>*/}
             {/*</header>*/}
 
-            <Customer/>
+            {/*<Customer/>*/}
+            <Staff/>
             {/*<Home/>*/}
             {/*<Contact/>*/}
             {/*<Booking />*/}

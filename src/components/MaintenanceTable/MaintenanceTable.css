@@ -1,0 +1,23 @@
+.table-container {
+    width: 100%;
+
+    border-left: 1px solid #341d52;
+}
+
+.maintenance-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.maintenance-details-table th, .maintenance-details-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.maintenance-details-table thead th {
+    background-color: #341d52;
+    color: #fff;
+}
