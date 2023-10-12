@@ -4,6 +4,7 @@ import './App.css';
 import Booking from './pages/Booking'
 import {Contact} from "./pages/Contact";
 import {Home} from "./pages/Home";
+import {Customer} from "./pages/Customer";
 
 function App() {
     return (
@@ -23,7 +24,8 @@ function App() {
                 {/*</a>*/}
             {/*</header>*/}
 
-            <Home/>
+            <Customer/>
+            {/*<Home/>*/}
             {/*<Contact/>*/}
             {/*<Booking />*/}
         </div>

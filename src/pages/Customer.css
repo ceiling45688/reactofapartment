@@ -1,0 +1,95 @@
+.customer {
+    width: 100%;
+}
+
+.customer_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 87, 34, 0.11);
+}
+
+.customer_div h2 {
+    /*background-color: white;*/
+    width: auto;
+    padding-top: 150px;
+    color: #000;
+}
+.customer_div {
+    display: flex;
+    width: 100%;
+    min-height: 50vh; ;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.customer_screen {
+    flex: 0.6;
+    max-height: 450px;
+    overflow-y: auto;
+    margin-left: 5%;
+    border: 2px dashed white;
+}
+
+.func_buttons {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px; /* Space between buttons */
+    width: 30%; /* Adjust as needed */
+}
+
+.func_buttons > div {
+    padding: 15px;
+    border: 1px solid #ccc; /* Just for visualization, adjust as needed */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.func_buttons > div:hover {
+    background-color: #f5f5f5; /* Light gray, adjust as needed */
+}
+
+/*render customer screen*/
+
+.customer_screen p {
+    color: #000;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 20px;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.maintenance_form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px; /* Space between elements */
+    background-color: #cccccc;
+}
+.maintenance_form textarea {
+    width: auto;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.maintenance_form button {
+    align-self: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green color, adjust as needed */
+    color: white;
+    cursor: pointer;
+}
+
+.maintenance_form button:hover {
+    background-color: #45a049; /* Darker green, adjust as needed */
+}
+

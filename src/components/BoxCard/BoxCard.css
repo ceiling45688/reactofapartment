@@ -1,0 +1,31 @@
+.box {
+    height: 600px;
+    width: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .rectangle {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: filter 0.3s;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.box .rectangle:hover {
+    filter: brightness(1.2); /* 鼠标悬停时增加亮度 */
+}
+
+.box .text-wrapper {
+    color: #ffffff;
+    font-family: "Montserrat-Bold", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px; /* Padding at the bottom */
+    text-align: center; /* Center the text */
+}
