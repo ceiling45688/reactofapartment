@@ -33,7 +33,7 @@ export const Booking = () => {
                     </div>
                 </div>
 
-                <div className="room-tour">
+                <div className="booking-room-tour">
                     {/*filter*/}
                     <div className="filter-container">
                         <div className="filter-content">
@@ -138,8 +138,6 @@ export const Booking = () => {
                                 imageUrl={require("../assets/images/outside.jpg")}
                             />
                         </div>
-
-
                     </div>
 
                 </div>

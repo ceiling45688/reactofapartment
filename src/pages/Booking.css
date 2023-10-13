@@ -1,11 +1,6 @@
 /* 外层div .booking */
 .booking {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /*background-color: #61dafb;*/
 }
 
 /*Hero部分：包括页面navbar和搜索部分，后面可以整合组件*/
@@ -29,10 +24,13 @@
 }
 
 /* 房间列表 */
-.room-tour {
-    display: flex; /* 使用flex布局确保子元素并列显示 */
+.booking-room-tour {
+    position: relative;
+    display: flex;
+    flex-direction: row;
     justify-content: flex-start; /* 子元素之间有空间 */
     grid-gap: 40px;
+    width: 100%;
 }
 
 /* Filter 部分 */

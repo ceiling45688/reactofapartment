@@ -1,36 +1,35 @@
-import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 import Booking from './pages/Booking'
-import {Contact} from "./pages/Contact";
-import {Home} from "./pages/Home";
-import {Customer} from "./pages/Customer";
-import {Staff} from "./pages/Staff"
+import { Contact } from "./pages/Contact";
+import { Home } from "./pages/Home";
+import { Customer } from "./pages/Customer";
+import { Staff } from "./pages/Staff"
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function App() {
     return (
-        <div className="App">
-            {/*<header className="App-header">*/}
-                {/*<img src={logo} className="App-logo" alt="logo" />*/}
-                {/*<p>*/}
-                    {/*Edit <code>src/App.js</code> and save to reload.*/}
-                {/*</p>*/}
-                {/*<a*/}
-                    {/*className="App-link"*/}
-                    {/*href="https://reactjs.org"*/}
-                    {/*target="_blank"*/}
-                    {/*rel="noopener noreferrer"*/}
-                {/*>*/}
-                    {/*Learn React*/}
-                {/*</a>*/}
-            {/*</header>*/}
+        <Router>
+            <div className="App">
+                {/* Navigation Links */}
+                <nav>
+                    <Link to="/">Home</Link>
+                    <Link to="/customer">Customer</Link>
+                    <Link to="/staff">Staff</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/booking">Booking</Link>
+                </nav>
 
-            {/*<Customer/>*/}
-            <Staff/>
-            {/*<Home/>*/}
-            {/*<Contact/>*/}
-            {/*<Booking />*/}
-        </div>
+                {/* Routes */}
+                <Routes>
+                    <Route path="/" element={<Home />} /> {/* This sets Home as the default page */}
+                    <Route path="/customer" element={<Customer />} />
+                    <Route path="/staff" element={<Staff />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/booking" element={<Booking />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 

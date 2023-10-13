@@ -43,7 +43,7 @@ export const Home = () =>{
 
 
             {/*RoomTour部分*/}
-            <div className="room-tour">
+            <div className="home-room-tour">
                 {/* Room Tour Title and Underline */}
                 <div className="room-tour-header">
                     <div className="room-tour-title">Room Tour</div>

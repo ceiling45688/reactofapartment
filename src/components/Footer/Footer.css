@@ -18,7 +18,8 @@
 .logotype {
     width: 100px;
     height: 100px;
-    background: #FFFFFF;
+    background-image: url("../../assets/images/CabbageApart_logo.png");
+    background-size: contain;
 }
 
 .social-links {
@@ -29,8 +30,23 @@
 .social-icon {
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
     border-radius: 50%;
+    background-size: cover;
+}
+.social-icon:nth-child(1) {
+    background-image: url('../../assets/images/socialMediaLogo1.png');
+}
+
+.social-icon:nth-child(2) {
+    background-image: url('../../assets/images/socialMediaLogo2.png');
+}
+
+.social-icon:nth-child(3) {
+    background-image: url('../../assets/images/socialMediaLogo3.png');
+}
+
+.social-icon:nth-child(4) {
+    background-image: url('../../assets/images/socialMediaLogo4.png');
 }
 
 .cabbageApart {
