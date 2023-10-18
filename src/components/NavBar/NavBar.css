@@ -62,6 +62,7 @@
 }
 
 .navbar .user-avatar {
+    position: relative; /* 添加这一行 */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -69,4 +70,70 @@
     margin-left: 20px;
     margin-right: 20px;
     flex-shrink: 0; /* 防止在小屏幕上缩小 */
+}
+
+
+.navbar .user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.navbar .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar .dropdown-menu {
+    position: absolute; /* 修改为绝对定位 */
+    top: 100%; /* 定位到 .user-avatar 的正下方 */
+    left: 50%; /* 使其水平居中 */
+    transform: translateX(-50%); /* 使其水平居中 */
+    background-color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.navbar .auth-popup {
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.navbar .auth-popup input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.navbar .auth-popup button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #341D52;
+    color: white;
+    cursor: pointer;
 }

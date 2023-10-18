@@ -15,7 +15,7 @@ h2 {
     position: absolute;
     top: 10px;
     left: 20px;
-    z-index:1; /*确保文字在其他元素之上 */
+    z-index: 1; /*确保文字在其他元素之上 */
 }
 
 .input-group {
@@ -26,15 +26,24 @@ h2 {
     margin-top: 40px;  /* 增加上边距以确保选项框不被标题遮挡 */
 }
 
+.input-wrapper {
+    width: 30%; /* 使每个输入框和其标签占用1/3的宽度 */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* 添加间隙 */
+}
+
+.input-label {
+    color: white; /* 设置标签颜色 */
+}
+
 .room-type, .start-date, .end-date {
-    width: 30%;
+    width: 100%; /* 使输入框占用其容器的全部宽度 */
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: "Poppins-Bold", Helvetica,sans-serif;
-
 }
-
 
 .search-btn {
     padding: 5px 10px;
