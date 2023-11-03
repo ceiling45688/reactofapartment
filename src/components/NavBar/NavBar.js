@@ -3,12 +3,32 @@ import React, { useState }from 'react';
 import './NavBar.css';
 import userIcon from "../../assets/images/user.svg";
 
-function NavBar({ currentPage }) {
+import axios from 'axios'
+
+function NavBar({ currentPage, onLogin }) {
     const [isLogged, setIsLogged] = useState(false); // 登录状态
     const [showDropdown, setShowDropdown] = useState(false); // 显示下拉菜单
     const [showPopup, setShowPopup] = useState(false); // 显示弹出框
     const [isLoginMode, setIsLoginMode] = useState(true); // 登录或注册模式
 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleLogin = async () => {
+        try {
+            const response = await axios.post('http://localhost:8081/login', {
+                email: email,
+                password: password
+            });
+            const token = response.headers['Authorization'].split(' ')[1];
+            localStorage.setItem('token', token);
+            setIsLogged(true);
+            setShowPopup(false);
+        } catch (error) {
+            console.error("Login failed: ", error);
+            // 显示错误消息给用户
+        }
+    };
 
     return (
         <div className="navbar">
@@ -38,7 +58,7 @@ function NavBar({ currentPage }) {
                         <>
                             <input type="email" placeholder="Email" />
                             <input type="password" placeholder="Password" />
-                            <button>Login</button>
+                            <button onClick={handleLogin}>Login</button>
                         </>
                         :
                         <>

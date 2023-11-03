@@ -1,8 +1,20 @@
 //What Do You Need component
-import React from 'react';
+import React, {useState} from 'react';
 import './WhatDoYouNeed.css'
 
-export const WhatDoYouNeed = () => {
+
+export const WhatDoYouNeed = ({ onSearch }) => {
+    const [roomType, setRoomType] = useState("");
+    const [startDate, setStartDate] = useState("");
+    const [endDate, setEndDate] = useState("");
+    // filter后续再改
+
+    const handleSearchClick = () => {
+        if (onSearch) {
+            onSearch(roomType, startDate, endDate);
+        }
+    };
+
     return (
 
             <div className="WDYN-box">
@@ -28,7 +40,7 @@ export const WhatDoYouNeed = () => {
                         <input type="date" className="end-date" id="endDate" />
                     </div>
                 </div>
-                <button className="search-btn">Search</button>
+                <button className="search-btn" onClick={handleSearchClick}>Search</button>
             </div>
 
     );

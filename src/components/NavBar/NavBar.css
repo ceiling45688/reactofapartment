@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: stretch; /* 使子元素填充整个宽度 */
+    position: relative;
+    z-index: 2000;
 }
 
 .navbar .rectangle4, .navbar .rectangle5 {
